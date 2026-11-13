@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Agar website responsif di HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ketahanan Pangan - Pangan Kita</title>
+
+    <style>
+        /* MENGATUR TAMPILAN DASAR WEBSITE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fff5fb;
+            color: #3f2850;
+            line-height: 1.7;
+        }
+
+        /* BAGIAN HEADER */
+        header {
+            background: linear-gradient(135deg, #d946a6, #8650c9);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        /* KONTEN UTAMA */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #9d3eaa;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        /* KARTU TIPS */
+        .tips-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px rgba(120, 50, 130, 0.10);
+            transition: transform 0.3s;
+            border-top: 5px solid #d946a6;
+        }
+
+        /* Efek ketika mouse diarahkan ke kartu */
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card .icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #a33d9c;
+            margin-bottom: 10px;
+        }
+
+        /* BAGIAN TAHUKAH KAMU */
+        .fun-fact {
+            background: linear-gradient(135deg, #e65cae, #8751ce);
+            color: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .fun-fact h2 {
+            color: white;
+        }
+
+        #factText {
+            margin: 20px auto;
+            max-width: 650px;
+            font-size: 17px;
+            min-height: 55px;
+        }
+
+        /* TOMBOL */
+        button {
+            background: white;
+            color: #9344b5;
+            border: none;
+            padding: 13px 28px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ffe1f2;
+            transform: scale(1.05);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #382344;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        /* RESPONSIVE UNTUK TABLET DAN HP */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            .tips-container {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                margin-top: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER WEBSITE -->
+    <header>
+        <h1>🌱 Ketahanan Pangan, Masa Depan Kita!</h1>
+
+        <p>
+            Yuk, kenali pentingnya ketahanan pangan
+            dan mulai lakukan perubahan kecil untuk
+            masa depan yang lebih baik.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- PENJELASAN SINGKAT -->
+        <section>
+            <h2>🌾 Apa Itu Ketahanan Pangan?</h2>
+
+            <p>
+                Ketahanan pangan adalah kondisi ketika setiap
+                orang memiliki akses terhadap pangan yang cukup,
+                aman, bergizi, dan terjangkau untuk memenuhi
+                kebutuhan hidupnya.
+
+                Ketahanan pangan penting agar masyarakat dapat
+                hidup sehat, produktif, dan sejahtera.
+            </p>
+        </section>
+
+        <!-- TIGA TIPS MENJAGA KETAHANAN PANGAN -->
+        <section>
+            <h2>💡 3 Tips Menjaga Ketahanan Pangan</h2>
+
+            <div class="tips-container">
+
+                <div class="card">
+                    <div class="icon">🥗</div>
+                    <h3>1. Kurangi Sisa Makanan</h3>
+                    <p>
+                        Ambil makanan secukupnya, simpan bahan
+                        makanan dengan benar, dan jangan
+                        membuang makanan yang masih layak.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">👩‍🌾</div>
+                    <h3>2. Dukung Petani Lokal</h3>
+                    <p>
+                        Beli produk pertanian lokal untuk
+                        membantu meningkatkan kesejahteraan
+                        petani dan mendukung ketersediaan pangan.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🌻</div>
+                    <h3>3. Menanam Tanaman Pangan</h3>
+                    <p>
+                        Manfaatkan halaman rumah atau sekolah
+                        untuk menanam sayuran dan tanaman pangan
+                        yang bermanfaat.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BAGIAN INTERAKTIF TAHUKAH KAMU -->
+        <section class="fun-fact">
+
+            <h2>✨ Tahukah Kamu?</h2>
+
+            <p id="factText">
+                Klik tombol di bawah untuk menemukan
+                fakta menarik tentang ketahanan pangan!
+            </p>
+
+            <button onclick="showFact()">
+                Tahukah Kamu? 💜
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER WEBSITE -->
+    <footer>
+        <p>
+            🌸 PANGAN KITA | Edukasi Ketahanan Pangan
+        </p>
+
+        <p>
+            Belajar Hari Ini, Menjaga Pangan untuk Masa Depan.
+        </p>
+    </footer>
+
+    <script>
+        // DAFTAR FAKTA DAN TIPS MENARIK
+        const facts = [
+            "Indonesia memiliki beragam sumber pangan lokal seperti singkong, jagung, sagu, dan ubi.",
+
+            "Mengurangi sisa makanan adalah salah satu cara sederhana untuk membantu menjaga ketahanan pangan.",
+
+            "Menanam sayuran sendiri di rumah dapat membantu memenuhi sebagian kebutuhan pangan keluarga.",
+
+            "Petani memiliki peran penting dalam menyediakan bahan pangan bagi masyarakat.",
+
+            "Diversifikasi pangan berarti membiasakan diri mengonsumsi berbagai jenis sumber makanan, bukan hanya beras.",
+
+            "Menyimpan makanan dengan cara yang benar dapat membantu mengurangi kerusakan dan pemborosan pangan.",
+
+            "Ketahanan pangan bukan hanya tanggung jawab pemerintah, tetapi juga membutuhkan peran masyarakat."
+        ];
+
+        // Variabel untuk menyimpan fakta sebelumnya
+        let lastFact = -1;
+
+        // FUNGSI UNTUK MENAMPILKAN FAKTA SECARA ACAK
+        function showFact() {
+
+            let randomFact;
+
+            // Memilih fakta yang berbeda dari sebelumnya
+            do {
+                randomFact = Math.floor(Math.random() * facts.length);
+            } while (randomFact === lastFact);
+
+            // Menyimpan fakta yang sudah ditampilkan
+            lastFact = randomFact;
+
+            // Mengubah teks pada halaman website
+            document.getElementById("factText").textContent =
+                facts[randomFact];
+        }
+    </script>
+
+</body>
+</html>
